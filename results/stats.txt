@@ -1,0 +1,31 @@
+  Metric                                        Set 1 (10 sess)                Set 2 (10 sess)               Δ
+  ────────────────────────────── ────────────────────────────── ────────────────────────────── ───────────────
+  Duration                                                 2.7h                          57.2m            1.8h
+  Thinking                                                57.6m                          24.4m           33.1m
+  Tokens input                                        1,585,206                        686,255         898,951
+  Tokens output                                         190,468                         81,693         108,775
+  Tokens reasoning                                      460,010                        174,828         285,182
+  Total tokens                                        2,235,684                        942,776       1,292,908
+  Total tool calls                                        1,310                            697             613
+
+  Tool                Calls        Avg      Total      Calls        Avg      Total    Δ Calls    Δ Total
+  ──────────────── ──────── ────────── ──────────   ──────── ────────── ──────────   ──────── ──────────
+  grep                  535     0.194s   103.968s        163     0.221s    36.010s       +372      +1.1m
+  read                  486     0.013s     6.344s        274     0.105s    28.709s       +212     -22.4s
+  bash                  171     7.363s  1259.038s         71     1.977s   140.335s       +100     +18.6m
+  lsp                     0     0.000s     0.000s         74     3.472s   256.896s        -74    -256.9s
+  glob                   37     0.303s    11.207s         59     0.384s    22.632s        -22     -11.4s
+  webfetch               27     0.995s    26.859s         14     1.195s    16.734s        +13     +10.1s
+  todowrite              22     0.004s     0.079s         23     0.003s     0.078s         -1      +0.0s
+  task                   14   120.283s  1683.959s          5    68.754s   343.772s         +9     +22.3m
+  edit                   13     0.715s     9.295s          9     0.377s     3.389s         +4      +5.9s
+  write                   3     0.575s     1.726s          5     0.184s     0.919s         -2      +0.8s
+  websearch               2     0.112s     0.224s          0     0.000s     0.000s         +2      +0.2s
+
+  https://github.com/llvm/llvm-project/pull/195570
+  https://github.com/llvm/llvm-project/issues/200470
+  https://github.com/llvm/llvm-project/issues/198890
+  https://github.com/llvm/llvm-project/pull/200103
+  https://github.com/llvm/llvm-project/pull/200001
+  https://github.com/llvm/llvm-project/pull/200634
+  https://github.com/llvm/llvm-project/issues/200677
